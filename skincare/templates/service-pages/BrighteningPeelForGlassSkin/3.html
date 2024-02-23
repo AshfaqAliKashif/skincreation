@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>Brightening Peel For Glass Skin</span>
+                                    <h3>Hands and Feet</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. 6000</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>Achieving "glass skin" often involves using products that promote brightness, even skin tone, and a smooth complexion. A brightening peel can be a part of this skincare routine. However, it's important to note that chemical peels, even those designed for brightening, can be potent, and it's recommended to perform them cautiously and under professional guidance.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here's a simple routine for a brightening peel aimed at achieving glass skin:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Cleanse</li>
+                                        <li><i class="fa fa-check-circle"></i> Pre-Peel Preparation</li>
+                                        <li><i class="fa fa-check-circle"></i> Brightening Peel</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Post-Peel Soothing</li>
+                                        <li><i class="fa fa-check-circle"></i> Sun Protection</li>
+                                        <li><i class="fa fa-check-circle"></i> Frequency</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Start with a once-a-week application and adjust based on your skin's tolerance. Overuse of peeling products can lead to irritation.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>Semi Permanent Makeup</span>
+                                    <h3>Microblading</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. 10000</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>Microblading is a popular semi-permanent cosmetic tattooing technique used to enhance the appearance of eyebrows. It involves the manual application of pigment into the outer layers of the skin, creating hair-like strokes that mimic natural eyebrow hairs. This technique is commonly chosen by individuals who want to achieve fuller, more defined eyebrows or those with sparse or thinning brows.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here are the key aspects of microblading:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Procedure</li>
+                                        <li><i class="fa fa-check-circle"></i> Pigments</li>
+                                        <li><i class="fa fa-check-circle"></i> Customization</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Topical Anesthetic</li>
+                                        <li><i class="fa fa-check-circle"></i> Healing Process</li>
+                                        <li><i class="fa fa-check-circle"></i> Duration of Results</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Before undergoing microblading, it's essential to research and choose a licensed and reputable professional who follows strict hygiene practices. Additionally, a thorough consultation with the technician is important to discuss expectations, desired outcomes, and any potential concerns or considerations.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

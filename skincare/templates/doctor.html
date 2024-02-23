@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Doctor{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our team</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <a href="{% url 'about'%}">About</a>
+                            <span>Doctor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Doctor Section Begin -->
+    <section class="doctor spad">
+        <div class="container">
+            <div class="doctor__item">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="doctor__item__pic">
+                            <img src="{% static 'img/doctor/doctor-1.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="doctor__item__text">
+                            <span>MBBS, Aesthetic & Cosmetic Physician</span>
+                            <h2>Dr. Shahid Manzoor Ch.</h2>
+                            <p> Dr.Shahid Manzoor chaudhary is an eminent iqbalian.
+                                He is highly skilled, experienced and a very well-known figure in the field of aesthetics.
+                                He inclulates confidence in his clients for their treatment.</p>
+                            <ul>
+                                <li><i class="fa fa-check-circle"></i> Holistic Healthcare Solutions</li>
+                                <li><i class="fa fa-check-circle"></i> Specialized Medical Expertise</li>
+                                <li><i class="fa fa-check-circle"></i> Patient-Centric Wellness Services</li>
+                                <li><i class="fa fa-check-circle"></i> Advanced Medical Care with Compassion</li>
+                            </ul>
+                            {% comment %} <div class="doctor__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctor__item">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-4">
+                        <div class="doctor__item__pic">
+                            <img src="{% static 'img/doctor/doctor-2.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-3">
+                        <div class="doctor__item__text  doctor__item__text--left">
+                            <span>MBBS, Aesthetic & Cosmetic Physician</span>
+                            <h2>Dr. Hira Sattar</h2>
+                            <p>Dr. Hira Sattar is qualified MBBS doctor from Avicenna Medical College, Lahore. She has performed her duties as House Officer in Jinnah Hospital Lahore. She has completed her Certification in aesthetic and cosmetology from OxyDerm laser and aesthetic beauty clinic. She has gained her experience from Jinnah Hospital, Dr. Saleem Rao Clinic and Dr. Farrukh Clinic </p>
+                            <ul>
+                                <li><i class="fa fa-check-circle"></i> Patient Centric</li>
+                                <li><i class="fa fa-check-circle"></i> Professional dealing</li>
+                                <li><i class="fa fa-check-circle"></i> Focused aesthetic operations</li>
+                                <li><i class="fa fa-check-circle"></i> Excellence treatments</li>
+                            </ul>
+                            {% comment %} <div class="doctor__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctor__item">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-5">
+                        <div class="doctor__item__pic">
+                            <img src="{% static 'img/doctor/doctor-3.png'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-6">
+                        <div class="doctor__item__text">
+                            <span>Aesthetician & Cosmotologist</span>
+                            <h2>Dr. B.R. Shah</h2>
+                            <p>Dr. Shah is a Doctor of Pharmacy and PhD in Molecular Biology providing expert advice and care to help her clients live well.
+                                She assisted in rhinoplasties, nanofat grafting with renowned plastic surgeons over a period of 3 years. </p>
+                            <ul>
+                                <li><i class="fa fa-check-circle"></i> Routine and medical wellness</li>
+                                <li><i class="fa fa-check-circle"></i> Consistent Excellence in Healthcare</li>
+                                <li><i class="fa fa-check-circle"></i> Creating a health-focused atmosphere</li>
+                                <li><i class="fa fa-check-circle"></i> Providing care with compassion and expertise</li>
+                            </ul>
+                            {% comment %} <div class="doctor__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctor__item">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-8">
+                        <div class="doctor__item__pic">
+                            <img src="{% static 'img/doctor/doctor-4.jpeg'%}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-7">
+                        <div class="doctor__item__text doctor__item__text--left">
+                            <span>Aesthetician</span>
+                            <h2>Naveed Ghafoor</h2>
+                            <p>Naveed Ghafoor is an aesthetician having 6 yeas of experience in aesthetics and he is the founder of Skin Creations Laser and Aesthetic Clinic. </p>
+                            <ul>
+                                <li><i class="fa fa-check-circle"></i> Friendly Atmosphere</li>
+                                <li><i class="fa fa-check-circle"></i> Excellence in Healthcare industry</li>
+                                <li><i class="fa fa-check-circle"></i> Building a healthy environment for patients</li>
+                                <li><i class="fa fa-check-circle"></i> Up to the mark Standard</li>
+                            </ul>
+                            {% comment %} <div class="doctor__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div> {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Doctor Section End -->
+    {% endblock main_content %}

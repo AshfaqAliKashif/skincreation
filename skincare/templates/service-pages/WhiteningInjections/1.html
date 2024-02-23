@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>Whitening Injection</span>
+                                    <h3>Whitening Injection</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. *****</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>Whitening injections refer to a cosmetic procedure involving the administration of substances via injection to lighten or brighten the skin tone. These injections often claim to reduce melanin production, which is responsible for skin pigmentation, resulting in a fairer complexion. It's important to note that the use of whitening injections is a controversial topic, and there are potential risks and side effects associated with these procedures.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here's a brief overview of the HydraFacial process:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Glutathione</li>
+                                        <li><i class="fa fa-check-circle"></i> Vitamin C</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Alpha-Lipoic Acid</li>
+                                        <li><i class="fa fa-check-circle"></i> Collagen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Before considering any whitening injections, it's essential to consult with a qualified dermatologist or healthcare professional who can assess your skin type, discuss potential risks, and provide guidance on safe and effective approaches to achieve healthy and radiant skin. Additionally, it's crucial to be cautious of unregulated products and procedures that may pose health risks.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

@@ -1,0 +1,212 @@
+
+{% load static %}
+                <div class="col-lg-4 order-lg-1">
+                    <div class="services__sidebar">
+                        <div class="services__accordion">
+                            <div class="services__title">
+                                <h4><img src="{% static 'img/icons/services-icon.png'%}" alt=""> All services</h4>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-heading active">
+                                        <a data-toggle="collapse" data-target="#collapseOne">
+                                            Facial Procedures
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'facial'%}">Hydra Facial (6k)</a></li>
+                                                <li><a href="{% url 'HydrafacialSteps'%}">Hydra Facial 14 Steps (15k)</a></li>
+                                                <li><a href="{% url 'Hydrafacialwhite'%}">Hydra Facial ( Whitening, Tightening)(8k)</a></li>
+                                                <li><a href="{% url 'LuxuryHydra'%}">Luxury Hydra Facial (12k)</a></li>
+                                                <li><a href="{% url 'Carbonfacial'%}">Carbon Facial / Black Doll Facial (5k)</a></li>
+                                                <li><a href="{% url 'Vampirefacial'%}">Vampire Facial (5k)</a></li>
+                                                <li><a href="{% url 'Photofacial'%}">Photo Facial (5k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">
+                                            Semi Permanent Makeup
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'bbglow'%}">BB Glow (10k)</a></li>
+                                                <li><a href="{% url 'Eyelash'%}">Eyelash Extensions (10k)</a></li>
+                                                <li><a href="{% url 'Microblading'%}">Microblading (10k)</a></li>
+                                                <li><a href="{% url 'LipTint'%}">Lip Tint (10k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseThree">
+                                            Threads Lift
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'ThreadsLift'%}">Face (12k Per Threads)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFour">
+                                            Brightening Peel For Glass Skin
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'Face'%}">Face (5k)</a></li>
+                                                <li><a href="{% url 'FaceNeck'%}">Face Neck (5k)</a></li>
+                                                <li><a href="{% url 'HandFeet'%}">Hands & Feet (6k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseFive">
+                                            HIFU
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'HIFU'%}">HIFU  4D (15k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseSix">
+                                            PRP Face with Whitening Stem Cells
+                                        </a>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'PRPF'%}">Micro-needling Face (6k)</a></li>
+                                                <li><a href="{% url 'PRPFMN'%}">Face PRP +MN (8k)</a></li>
+                                                <li><a href="{% url 'PRPFM'%}">Face PRP+ Meso (10k)</a></li>
+                                                <li><a href="{% url 'PRPFace'%}">Face PRP (6k)</a></li>
+                                                <li><a href="{% url 'FPRCOM'%}">Face PRP+ CO2+ Meso (12k)</a></li>
+                                                <li><a href="{% url 'PRPFCO'%}">CO2 (7k)</a></li>
+                                                <li><a href="{% url 'PRPFMeso'%}">Mesotherapy (5k)</a></li>
+                                                <li><a href="{% url 'PRPBoTox'%}">BoTox (15k)</a></li>
+                                                <li><a href="{% url 'PRPFillers'%}">Fillers (20k)</a></li>
+                                                <li><a href="{% url 'PRPFProfhilo'%}">Profhilo (30k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseSeven">
+                                            PRP Hair
+                                        </a>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'PRPHS'%}">Hair PRP (Simple) (6k)</a></li>
+                                                <li><a href="{% url 'PRPHM'%}">Hair PRP With Meso (8k)</a></li>
+                                                <li><a href="{% url 'PRPHB'%}">Hair PRP Biotin (8ML) (10k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseEight">
+                                            Whitening Injections
+                                        </a>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'WhiteningInjection'%}">Detail</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseNine">
+                                            Slimming Drips
+                                        </a>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'SlimingDrips'%}">Slimming/ Fat dissolving Drips (10k)</a></li>
+                                                <li><a href="{% url 'SlimingInjection'%}">Fat Dissolving Injections (1500 ml)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-heading">
+                                        <a data-toggle="collapse" data-target="#collapseTen">
+                                            Lasers: Hair Removal (Soprano) Per Session
+                                        </a>
+                                    </div>
+                                    <div id="collapseTen" class="collapse" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li><a href="{% url 'LaserFF'%}">Face Full (3000 to 6000)</a></li>
+                                                <li><a href="{% url 'LaserFaceF'%}">Face Full (3000 to 5000)</a></li>
+                                                <li><a href="{% url 'LaserE'%}">Ears (1500 to 2500)</a></li>
+                                                <li><a href="{% url 'LaserCA'%}">Chest + Abdomen (5000 to 8000)</a></li>
+                                                <li><a href="{% url 'LaserB'%}">Back (4000 to 7000)</a></li>
+                                                <li><a href="{% url 'LaserUA'%}">UnderArms (3500 to 5500)</a></li>
+                                                <li><a href="{% url 'LaserUL'%}">Underlegs (3500 to 5500)</a></li>
+                                                <li><a href="{% url 'LaserFA'%}">Full Arms (4000 to 6000)</a></li>
+                                                <li><a href="{% url 'LaserFL'%}">Full legs (4000 to 6000)</a></li>
+                                                <li><a href="{% url 'LaserHL'%}">Half legs (2000 to 4000)</a></li>
+                                                <li><a href="{% url 'LaserH'%}">Hands (1500 to 2500)</a></li>
+                                                <li><a href="{% url 'LaserN'%}">Necks (1500 to 2500)</a></li>
+                                                <li><a href="{% url 'LaserFBOne'%}">Full Body ( 1 Session) (12k)</a></li>
+                                                <li><a href="{% url 'LaserFBTwo'%}">Full Body ( 2 Session) (22k)</a></li>
+                                                <li><a href="{% url 'LaserFBThree'%}">Full Body ( 3 Session) (32k)</a></li>
+                                                <li><a href="{% url 'LaserFBFour'%}">Full Body ( 8 Session) (80k)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__appoinment">
+                        <div class="services__title">
+                            <h4><img src="{% static 'img/icons/services-icon.png'%}" alt=""> Get an appointment</h4>
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <div class="datepicker__item">
+                                <input type="text" placeholder="Date" class="datepicker">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                            <select>
+                                <option value="">Type of service</option>
+                                <option value="">Advanced equipment</option>
+                                <option value="">Qualified doctors</option>
+                                <option value="">Certified services</option>
+                                <option value="">Emergency care</option>
+                            </select>
+                            <button type="submit" class="site-btn">Book appoitment</button>
+                        </form>
+                    </div>
+                </div>

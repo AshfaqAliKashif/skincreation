@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>PRP Hair</span>
+                                    <h3>Hair PRP (Simple)</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. 6000</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>PRP (Platelet-Rich Plasma) therapy for hair is a non-surgical procedure that involves using the patient's own blood to stimulate hair growth. The procedure is based on the idea that the growth factors in platelets can help promote the regeneration of hair follicles, potentially leading to increased hair thickness and density.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here's a brief overview of the PRP Hair process:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Blood Draw</li>
+                                        <li><i class="fa fa-check-circle"></i> Centrifugation</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Antioxidant Protection</li>
+                                        <li><i class="fa fa-check-circle"></i> Injection</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>As with any medical procedure, it's crucial to consult with a qualified healthcare provider to determine if PRP therapy is a suitable option for your specific hair loss concerns. The effectiveness of PRP for hair may vary among individuals, and results are not guaranteed.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

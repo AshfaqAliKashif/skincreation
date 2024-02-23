@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}BlogDetails{% endblock %}
+{% block main_content %}
+{% load static %}
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="blog__details__hero set-bg" data-setbg="{% static 'img/blog/details/blog-hero.jpg'%}">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-7 text-center">
+                        <div class="blog__hero__text">
+                            <h2>Here’s how you can get a natural glow this party season</h2>
+                            <ul>
+                                <li><img src="{% static 'img/blog/blog-author.jpg'%}" alt=""> John Doe</li>
+                                <li>Dec 06, 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="blog__details__social">
+                        <a href="https://www.facebook.com/skincreation934"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/skincreation934"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/skincreation934"><i class="fa fa-instagram"></i></a>
+                        {% comment %} <a href="#"><i class="fa fa-dribbble"></i></a> {% endcomment %}
+                    </div>
+                    <div class="blog__details__text">
+                        <div class="blog__details__text__item">
+                            <h5>Step 1 - Anesthesia</h5>
+                            <p>Anesthesia refers to a medical practice that induces a temporary loss of sensation or awareness in a patient, typically for the purpose of performing medical procedures or surgeries. There are various types of anesthesia, and the choice depends on the nature of the procedure, the patient's medical history, and other factors.</p>
+                        </div>
+                        <div class="blog__details__text__item">
+                            <h5>Step 2 - The incision</h5>
+                            <p>An incision refers to a cut made into the body, typically by a surgeon during a medical procedure or surgery. The purpose of an incision is to provide access to the underlying tissues or organs for various purposes, such as examination, repair, removal of diseased tissue, or the implantation of medical devices.
+
+                                The characteristics of the incision can vary based on the type of surgery, the specific procedure being performed, and the surgeon's preference.</p>
+                        </div>
+                    </div>
+                    <div class="blog__details__desc">
+                        <p>A traditional neck lift incision often begins in the hairline at the level of the sideburn,
+                            continues down and around the ear and ends in the posterior hair. Fat may be sculpted or
+                            redistributed from the jowls and neck. The tissue underlying the neck skin is repositioned,
+                            and commonly the platysma muscle is tightened. Skin is redraped over the uplifted contours
+                            and excess skin is trimmed away. A separate incision under the chin is often necessary for
+                            liposuction of this area and for repair of the muscle. Sutures or skin adhesives close the
+                        incisions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="blog__details__pic">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="{% static 'img/blog/details/bd-1.jpg'%}" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="{% static 'img/blog/details/bd-2.jpg'%}" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="{% static 'img/blog/details/bd-3.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="blog__details__desc__more">
+                        <p>A limited incision neck lift may involve incisions only around the ear. While the incisions
+                        are shorter, the results may be more limited.</p>
+                    </div>
+                    <div class="blog__details__text">
+                        <div class="blog__details__text__item">
+                            <h5>Step 3 - Closing the incisions</h5>
+                            <p>Incision lines are closed with sutures and perhaps skin glue. Sutures may be dissolving,
+                                or may need to be removed after a few days. Once healed, the incision lines from a neck
+                                lift are usually well concealed within the hairline and in the natural contours of the
+                            ear.</p>
+                        </div>
+                        <div class="blog__details__text__item">
+                            <h5>Step 4 - See the results</h5>
+                            <p>The visible improvements of a neck lift appear as swelling and bruising subside. Your
+                                final neck lift result should not only restore a more youthful and rested appearance,
+                            but also help you feel more confident about yourself.</p>
+                        </div>
+                    </div>
+                    <div class="blog__details__tag">
+                        <p><i class="fa fa-tag"></i> Tag:</p>
+                        <a href="{% url "blogdetails" %}">Wedding</a>
+                        <a href="{% url "blogdetails" %}">Event</a>
+                        <a href="{% url "blogdetails" %}">Couple</a>
+                    </div>
+                    <div class="blog__details__btns">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <a href="{% url "blogdetails" %}" class="blog__details__btn__item">
+                                    <h6 class="title"><i class="fa fa-angle-left"></i> Previous posts</h6>
+                                    <div class="blog__details__btn__pic">
+                                        <img src="{% static 'img/blog/details/prev.jpg'%}" alt="">
+                                    </div>
+                                    <div class="blog__details__btn__text">
+                                        <h6>Looking for Music & Sounds for my new Android...</h6>
+                                        <span>Nov 27, 2019</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <a href="{% url "blogdetails" %}" class="blog__details__btn__item blog__details__btn__prev">
+                                    <h6 class="title">Next posts <i class="fa fa-angle-right"></i></h6>
+                                    <div class="blog__details__btn__pic">
+                                        <img src="{% static 'img/blog/details/next.jpg'%}" alt="">
+                                    </div>
+                                    <div class="blog__details__btn__text">
+                                        <h6>Looking for Music & Sounds for my new Android...</h6>
+                                        <span>Nov 27, 2019</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__details__related">
+                        <h3>Recent posts</h3>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <img src="{% static 'img/blog/blog-8.jpg'%}" alt="">
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <h5><a href="{% url "blogdetails" %}">What are the steps of a body lift procedure?</a></h5>
+                                        <span>Dec 06, 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <img src="{% static 'img/blog/blog-6.jpg'%}" alt="">
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <h5><a href="{% url "blogdetails" %}">What are the steps of a neck lift procedure?</a></h5>
+                                        <span>Dec 06, 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="blog__item">
+                                    <div class="blog__item__pic">
+                                        <img src="{% static 'img/blog/blog-9.jpg'%}" alt="">
+                                    </div>
+                                    <div class="blog__item__text">
+                                        <h5><a href="{% url "blogdetails" %}">How to shop for a cosm surgery procedure</a></h5>
+                                        <span>Dec 06, 2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__details__comment">
+                        <h3>Leave a comment</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <input type="text" placeholder="Website">
+                                </div>
+                            </div>
+                            <textarea placeholder="Comment"></textarea>
+                            <button type="submit" class="site-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+    {% endblock main_content %}
+    

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>Thread Lift</span>
+                                    <h3>Thread Lift</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. 12000/Thread</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>A thread lift in aesthetics refers to a cosmetic procedure designed to lift and tighten sagging skin on the face or other parts of the body. This non-surgical technique involves the use of specialized threads that are inserted under the skin to lift and support the tissue. The threads used in this procedure can be absorbable or non-absorbable, and they may have barbs or cones to help anchor the skin in a lifted position.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here is a general overview of the thread lift procedure:</p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Consultation</li>
+                                        <li><i class="fa fa-check-circle"></i> Procedure</li>
+                                        <li><i class="fa fa-check-circle"></i> Types of Threads</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Results</li>
+                                        <li><i class="fa fa-check-circle"></i> Recovery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>As with any aesthetic procedure, it's crucial to choose a qualified and experienced practitioner to ensure safety and optimal results. Thread lifts may not be suitable for everyone, so a thorough consultation with a healthcare professional is essential to determine eligibility and discuss potential risks and benefits.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

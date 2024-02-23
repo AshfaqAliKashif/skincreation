@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>PRP</span>
+                                    <h3>Fillers</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. 20000</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>The combination of PRP (Platelet-Rich Plasma) and stem cells for facial treatments is an advanced approach in the field of aesthetic medicine. PRP involves using the patient's own blood to concentrate platelets, which are rich in growth factors. Stem cells are undifferentiated cells with the potential to develop into various cell types.
+
+                            The combination of PRP and stem cells for facial treatments, often referred to as regenerative or rejuvenation therapies, aims to promote collagen production, improve skin texture, and address signs of aging. When the term "whitening" is used in this context, it typically refers to treatments that target hyperpigmentation and promote a more even skin tone.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here's a breakdown of how the combination of PRP and whitening stem cells might be applied in a facial treatment:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> PRP (Platelet-Rich Plasma)</li>
+                                        <li><i class="fa fa-check-circle"></i> Whitening Stem Cells</li>
+                                        <li><i class="fa fa-check-circle"></i> Combination Benefits</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Collagen Stimulation</li>
+                                        <li><i class="fa fa-check-circle"></i> Regenerative Effects</li>
+                                        <li><i class="fa fa-check-circle"></i> Skin Tone Improvement</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>It's important to note that aesthetic treatments, including PRP and stem cell therapies, should be performed by licensed and experienced practitioners. Additionally, regulations and practices may vary by region, so it's advisable to seek treatment from reputable and certified providers.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

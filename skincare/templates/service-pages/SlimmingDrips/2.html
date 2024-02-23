@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Services{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Services</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <div class="services__details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__title">
+                                    <span>Fat Dissolving Injections</span>
+                                    <h3>Fat Dissolving Injections</h3>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__details__widget">
+                                    <div class="rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <h3>Rs. *****</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__pic">
+                            <img src="{% static 'img/services/services-details.jpg'%}" alt="">
+                        </div>
+                        <div class="services__details__text">
+                            <p>Slimming or fat dissolving drips typically refer to intravenous (IV) infusions or injections that claim to aid in weight loss or fat reduction. These treatments often involve the administration of various substances directly into the bloodstream with the goal of promoting fat metabolism, enhancing energy expenditure, or supporting weight loss efforts. It's important to note that the use of such drips for slimming purposes is a controversial and debated topic, and the safety and efficacy of these treatments are not universally accepted within the medical community.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-1.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-2.jpg'%}" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="services__details__item__pic">
+                                    <img src="{% static 'img/services/sd-3.jpg'%}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__details__desc">
+                            <p>Here are some substances that are sometimes included in slimming or fat dissolving Injections:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> Lipotropic Agents</li>
+                                        <li><i class="fa fa-check-circle"></i> Amino Acids</li>
+                                        <li><i class="fa fa-check-circle"></i> Vitamins and Minerals</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="services__details__feature">
+                                        <li><i class="fa fa-check-circle"></i> L-Carnitine</li>
+                                        <li><i class="fa fa-check-circle"></i> Hydration Solutions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>Before considering any slimming or fat dissolving drips, it's crucial to consult with qualified healthcare professionals, such as a medical doctor or registered dietitian. They can assess your overall health, discuss your weight loss goals, and provide evidence-based guidance on safe and effective approaches.
+
+                                In conclusion, the use of IV drips for slimming or fat dissolving should be approached with caution. Prioritize evidence-based approaches to weight management and consult with healthcare professionals to make informed decisions about your health and well-being.</p>
+                        </div>
+                    </div>
+                </div>
+                {% include 'service-pages/services-base.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+    {% endblock main_content %}

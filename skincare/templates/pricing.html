@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}{{block.super}}Pricing{% endblock %}
+{% block main_content %}
+{% load static %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option spad set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Our Prices</h2>
+                        <div class="breadcrumb__links">
+                            <a href="{% url 'index'%}">Home</a>
+                            <span>Pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Pricing Section Begin -->
+    <section class="pricing spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <p>BREASTS</p>
+                            <h3>Dr. Hira Sattar<span>MBBS, AESTHETIC & COSMETIC PHYSICIAN</span></h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <h6>Belt Lipectomy (Body Lift)</h6>
+                                <span>$14,630</span>
+                            </li>
+                            <li>
+                                <h6>Brachioplasty (Arm Lift)</h6>
+                                <span>$7,750</span>
+                            </li>
+                            <li>
+                                <h6>Liposuction (Whole Body)</h6>
+                                <span>$3,550 – 8,500</span>
+                            </li>
+                            <li>
+                                <h6>Thigh / Buttock Lift</h6>
+                                <span>$10,100</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="primary-btn">Book now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <p>Body contouring</p>
+                            <h3>Dr. Shahid Manzoor Ch. <span>MBBS, AESTHETIC & COSMETIC PHYSICIAN</span></h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <h6>Belt Lipectomy (Body Lift)</h6>
+                                <span>$14,630</span>
+                            </li>
+                            <li>
+                                <h6>Brachioplasty (Arm Lift)</h6>
+                                <span>$7,750</span>
+                            </li>
+                            <li>
+                                <h6>Liposuction (Whole Body)</h6>
+                                <span>$3,550 – 8,500</span>
+                            </li>
+                            <li>
+                                <h6>Thigh / Buttock Lift</h6>
+                                <span>$10,100</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="primary-btn">Book now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="pricing__item">
+                        <div class="pricing__item__title">
+                            <p>FACIAL PROCEDURES</p>
+                            <h3>Naveed Ghafoor <span>AESTHETICIAN</span></h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <h6>Belt Lipectomy (Body Lift)</h6>
+                                <span>$14,630</span>
+                            </li>
+                            <li>
+                                <h6>Brachioplasty (Arm Lift)</h6>
+                                <span>$7,750</span>
+                            </li>
+                            <li>
+                                <h6>Liposuction (Whole Body)</h6>
+                                <span>$3,550 – 8,500</span>
+                            </li>
+                            <li>
+                                <h6>Thigh / Buttock Lift</h6>
+                                <span>$10,100</span>
+                            </li>
+                        </ul>
+                        <a href="{% url 'contact' %}" class="primary-btn">Book now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section End -->
+    {% endblock main_content %}
